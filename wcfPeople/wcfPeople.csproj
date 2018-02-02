@@ -24,6 +24,8 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <ApplicationInsightsResourceId>/subscriptions/a46ec288-2e76-44ce-b3ab-5e0b26ff20b4/resourcegroups/Default-ApplicationInsights-CentralUS/providers/microsoft.insights/components/wcfPeople</ApplicationInsightsResourceId>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -121,6 +123,10 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config" />
+    <None Include="Dockerfile" />
+    <None Include=".dockerignore">
+      <DependentUpon>Dockerfile</DependentUpon>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
