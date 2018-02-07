@@ -11,6 +11,7 @@ namespace wcfPeople
         {
             var all = new Person[] {
 
+ 
                 new Person()  {
                     id = 1,
                     firstName = "John",
@@ -78,8 +79,7 @@ namespace wcfPeople
         public int id { get; set; }
         public string lastName { get; set; }
         public string firstName { get; set; }
-        public int age { get; set; }
         public string location { get; set; }
-
+        public int age { get; set; }
     }
 }
